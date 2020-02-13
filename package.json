@@ -9,8 +9,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "docs": "typedoc --out docs .",
-    "test": "npx jest"
+    "docs": "typedoc --out docs ."
   },
   "repository": {
     "type": "git",
