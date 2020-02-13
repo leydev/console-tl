@@ -6,7 +6,8 @@ var date_1 = require("./date");
  * @returns {string}
  */
 function formatDate() {
-    return date_1.CustomDate.year + '-' + date_1.CustomDate.month + '-' + date_1.CustomDate.day + ' ' + date_1.CustomDate.hour + ':' + date_1.CustomDate.min + ':' + date_1.CustomDate.sec + '.' + date_1.CustomDate.mile;
+    var d = date_1["default"]();
+    return d.year + '-' + d.month + '-' + d.day + ' ' + d.hour + ':' + d.min + ':' + d.sec + '.' + d.mile;
 }
 exports["default"] = formatDate;
 //# sourceMappingURL=formatDate.js.map
