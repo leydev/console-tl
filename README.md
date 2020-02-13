@@ -4,7 +4,7 @@
 
 A Console that emits logs with date and time
 
-See the documentation: [/docs](/docs)
+See the documentation: [/docs](https://leydev.github.io/console-tl/)
 
 ## Install and use
 
