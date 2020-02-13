@@ -39,4 +39,4 @@ console.info = ConsoleTL.info
 console.warn = ConsoleTL.warn
 console.error = ConsoleTL.error
 
-export default ConsoleTL
+module.exports = ConsoleTL

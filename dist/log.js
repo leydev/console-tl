@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var formatDate_1 = require("./modules/formatDate");
 /**
  * @description A console that emits logs with date and time
@@ -18,7 +18,7 @@ var ConsoleTL = /** @class */ (function () {
         for (var _i = 0; _i < arguments.length; _i++) {
             arg[_i] = arguments[_i];
         }
-        process.stdout.write(formatDate_1.default() + ' [LOG]: ' + arg.join(' ') + '\n');
+        process.stdout.write(formatDate_1["default"]() + ' [LOG]: ' + arg.join(' ') + '\n');
     };
     /**
      * @description Show info log
@@ -28,7 +28,7 @@ var ConsoleTL = /** @class */ (function () {
         for (var _i = 0; _i < arguments.length; _i++) {
             arg[_i] = arguments[_i];
         }
-        process.stdout.write(formatDate_1.default() + ' [INFO]: ' + arg.join(' ') + '\n');
+        process.stdout.write(formatDate_1["default"]() + ' [INFO]: ' + arg.join(' ') + '\n');
     };
     /**
      * @description Show warn log
@@ -38,7 +38,7 @@ var ConsoleTL = /** @class */ (function () {
         for (var _i = 0; _i < arguments.length; _i++) {
             arg[_i] = arguments[_i];
         }
-        process.stdout.write(formatDate_1.default() + ' [WARN]: ' + arg.join(' ') + '\n');
+        process.stdout.write(formatDate_1["default"]() + ' [WARN]: ' + arg.join(' ') + '\n');
     };
     /**
      * @description Show error log
@@ -48,7 +48,7 @@ var ConsoleTL = /** @class */ (function () {
         for (var _i = 0; _i < arguments.length; _i++) {
             arg[_i] = arguments[_i];
         }
-        process.stderr.write(formatDate_1.default() + ' [ERROR]: ' + arg.join(' ') + '\n');
+        process.stderr.write(formatDate_1["default"]() + ' [ERROR]: ' + arg.join(' ') + '\n');
     };
     return ConsoleTL;
 }());
@@ -57,5 +57,5 @@ console.log = ConsoleTL.log;
 console.info = ConsoleTL.info;
 console.warn = ConsoleTL.warn;
 console.error = ConsoleTL.error;
-exports.default = ConsoleTL;
+module.exports = ConsoleTL;
 //# sourceMappingURL=log.js.map
