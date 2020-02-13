@@ -9,7 +9,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "docs": "typedoc --out docs ."
+    "docs": "typedoc --out docs .",
+    "test": "node console.test.js"
   },
   "repository": {
     "type": "git",
