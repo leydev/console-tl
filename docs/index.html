@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>console-lt</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title"></a>
+					<a href="index.html" class="title">console-lt</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1></h1>
+			<h1>console-lt</h1>
 		</div>
 	</div>
 </header>
@@ -64,6 +64,31 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<a href="#console-lt-console-log-time" id="console-lt-console-log-time" style="color: inherit; text-decoration: none;">
+					<h1>console-lt (Console Log Time)</h1>
+				</a>
+				<a href="#description" id="description" style="color: inherit; text-decoration: none;">
+					<h2>Description</h2>
+				</a>
+				<p>A Console that emits logs with date and time</p>
+				<p>See the documentation: <a href="/docs">/docs</a></p>
+				<a href="#install-and-use" id="install-and-use" style="color: inherit; text-decoration: none;">
+					<h2>Install and use</h2>
+				</a>
+				<p>Instalation:   </p>
+				<pre><code>bash: <span class="hljs-built_in">npm</span> i <span class="hljs-built_in">console</span>-lt</code></pre><p>Use:   </p>
+				<pre><code><span class="hljs-string">const</span> <span class="hljs-string">consoleLT</span> <span class="hljs-string">=</span> <span class="hljs-string">require('console-lt')</span>
+
+<span class="hljs-string">consoleLT.log('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[LOG]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">consoleLT.info('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[INFO]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">consoleLT.warn('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[WARN]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">consoleLT.error('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[ERROR]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span></code></pre><p>The default console global will be overwriten. So you can use global console to log with date and time:   </p>
+				<pre><code><span class="hljs-string">require('console-lt')</span>
+
+<span class="hljs-string">console.log('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[LOG]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">console.info('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[INFO]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">console.warn('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[WARN]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span>
+<span class="hljs-string">console.error('Hello</span> <span class="hljs-string">Wolrd')</span> <span class="hljs-string">//Output:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-13</span> <span class="hljs-number">14</span><span class="hljs-string">:01:23.234</span> <span class="hljs-string">[ERROR]:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">Wolrd</span></code></pre><p>Last update: 13/02/2020</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -76,7 +101,7 @@
 						<a href="modules/_log_.html">&quot;log&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_modules_date_.html">&quot;modules/date&quot;</a>
+						<a href="modules/_modules_datetime_.html">&quot;modules/date<wbr>Time&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_modules_formatdate_.html">&quot;modules/format<wbr>Date&quot;</a>

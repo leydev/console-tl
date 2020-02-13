@@ -1,4 +1,4 @@
-import dateTime from './date';
+import dateTime from './dateTime';
 
 /**
  * Returns de date formated

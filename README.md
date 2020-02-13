@@ -4,7 +4,7 @@
 
 A Console that emits logs with date and time
 
-See the documentation: /docs
+See the documentation: [/docs](/docs)
 
 ## Install and use
 

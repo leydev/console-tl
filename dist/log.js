@@ -2,10 +2,10 @@
 exports.__esModule = true;
 var formatDate_1 = require("./modules/formatDate");
 /**
- * @description A console that emits logs with date and time
- * @version 1
- * @since 13/03/2020
- * @author leydev [leydev.com.br](leydev.com.br)
+ * @class ConsoleTL
+ * @description A console class that emits logs with date and time
+ * @version 1.0
+ * @author leydev [leydev.com.br](https://leydev.com.br)
  */
 var ConsoleTL = /** @class */ (function () {
     function ConsoleTL() {

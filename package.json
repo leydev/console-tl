@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.7.1"
+  },
   "scripts": {
     "docs": "typedoc --out docs .",
     "test": "node console.test.js"

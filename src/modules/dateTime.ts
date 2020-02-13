@@ -4,7 +4,7 @@ interface iDateTime {
      */
     hour: string;
     /**
-     * The minute of time now with 2 digits
+     * @description The minute of time now with 2 digits
      */
     min: string;
     /**
