@@ -1,7 +1,7 @@
 {
   "name": "console-lt",
   "version": "1.0.0",
-  "description": "A Console that emits logs with data and time",
+  "description": "A Console that emits logs with date and time",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -23,7 +23,7 @@
     "date",
     "time"
   ],
-  "author": "leydev",
+  "author": "leydev (leydev.com.br)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leydev/console-tl/issues"
