@@ -22,10 +22,10 @@ consoleLT.warn('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [WARN]: Hello Wo
 consoleLT.error('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [ERROR]: Hello Wolrd
 ```
 
-The default console global will be overwriten. So you can use global console to log with date and time:   
+With method "overwrite", the default console global will be overwriten. So you can use global console to log with date and time:   
 
 ```
-require('console-lt')
+require('console-lt').overwrite()
 
 console.log('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [LOG]: Hello Wolrd
 console.info('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [INFO]: Hello Wolrd
@@ -33,4 +33,12 @@ console.warn('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [WARN]: Hello Wolr
 console.error('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [ERROR]: Hello Wolrd
 ```
 
-Last update: 13/02/2020
+**Last update: 21/02/2020**  
+- Método overwrite().
+
+**update: 13/02/2020**  
+- Criação do módulo;
+- Método log();
+- Método info();
+- Método warn();
+- Método error().

@@ -50,12 +50,16 @@ var ConsoleTL = /** @class */ (function () {
         }
         process.stderr.write(formatDate_1["default"]() + ' [ERROR]: ' + arg.join(' ') + '\n');
     };
+    /**
+     * @description This method overwrites de global console. Replacing the log, info, warn, error
+     */
+    ConsoleTL.overwrite = function () {
+        console.log = this.log;
+        console.info = this.info;
+        console.warn = this.warn;
+        console.error = this.error;
+    };
     return ConsoleTL;
 }());
-//Overides something methos of console global
-console.log = ConsoleTL.log;
-console.info = ConsoleTL.info;
-console.warn = ConsoleTL.warn;
-console.error = ConsoleTL.error;
 module.exports = ConsoleTL;
 //# sourceMappingURL=log.js.map

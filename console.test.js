@@ -14,6 +14,8 @@ function sleep(ms) {
     consoleLT.error('Hello World')
     await sleep(ms)
 
+    consoleLT.overwrite()
+
     console.log('(GLOBAL) Hello World')
     await sleep(ms)
     console.info('(GLOBAL) Hello World')

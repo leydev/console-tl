@@ -31,12 +31,16 @@ class ConsoleTL {
     public static error(...arg): void {
         process.stderr.write(formatDate() + ' [ERROR]: ' + arg.join(' ') + '\n')
     }
-}
 
-//Overides something methos of console global
-console.log = ConsoleTL.log
-console.info = ConsoleTL.info
-console.warn = ConsoleTL.warn
-console.error = ConsoleTL.error
+    /**
+     * @description This method overwrites de global console. Replacing the log, info, warn, error
+     */
+    public static overwrite() {
+        console.log = this.log;
+        console.info = this.info;
+        console.warn = this.warn;
+        console.error = this.error;
+    }
+}
 
 module.exports = ConsoleTL
