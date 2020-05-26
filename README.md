@@ -10,9 +10,9 @@ See the documentation: [/docs](https://leydev.github.io/console-tl/)
 
 Instalation:   
 ```
-bash: npm i console-lt
+$ npm i console-lt
 ```
-Use:   
+Usage:   
 ```
 const consoleLT = require('console-lt')
 
@@ -21,8 +21,8 @@ consoleLT.info('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [INFO]: Hello Wo
 consoleLT.warn('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [WARN]: Hello Wolrd
 consoleLT.error('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [ERROR]: Hello Wolrd
 ```
-
-With method "overwrite", the default console global will be overwriten. So you can use global console to log with date and time:   
+Method "overwrite" will change the default global console to also display date and time
+Here's an example:  
 
 ```
 require('console-lt').overwrite()
@@ -33,10 +33,11 @@ console.warn('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [WARN]: Hello Wolr
 console.error('Hello Wolrd') //Output: 2020-02-13 14:01:23.234 [ERROR]: Hello Wolrd
 ```
 
-**Last update: 21/02/2020**  
+**Changelog**
+**21/02/2020**  
 - Método overwrite().
 
-**update: 13/02/2020**  
+**13/02/2020**  
 - Criação do módulo;
 - Método log();
 - Método info();
